@@ -71,7 +71,7 @@ are implemented. They are as follows"
 ARGV_EXCEED = 1				#You passed in too many arguments.
 FILE_INVALID = 2			#The file extension is invalid. .txt and .dskp only!
 FILE_READ_ERROR = 3			#There was an error reading the file contents.
-FILE_WRITE_ERROR = 4		#There was an error writing to the file.
+FILE_WRITE_ERROR = 4			#There was an error writing to the file.
 ```
 
 The program is set up such that when conditions are met, `sys.exit(ERROR_CODE)`
