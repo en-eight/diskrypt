@@ -38,7 +38,7 @@ I hope you enjoy Diskyrpt!
 
 ### Command Usage
 
-You need to have Python installed for this to work. Get Python at `https:/www.python.org`.
+You need to have Python installed for this to work. Get Python at `https://www.python.org`.
 
 Once Python is installed, start up your command line and change your directory
 over to where Diskrypt is stored. For example, on Windows:
