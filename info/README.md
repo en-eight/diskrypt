@@ -65,7 +65,7 @@ Text files (`.txt`) are also supported at the moment.
 ### Error Codes
 
 There are a slew of error codes that the program returns. At the moment only four
-are implemented. They are as follows"
+are implemented. They are as follows:
 
 ```python
 	ARGV_EXCEED = 1				#You passed in too many arguments.
