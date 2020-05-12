@@ -9,15 +9,15 @@ def encryptStr(userString, userKey):
 
 
 class ERROR(Enum):
-	ARGV_EXCEED = 1
+	ARGV_NEQUAL = 1
 	FILE_INVALID = 2
 	FILE_READ_ERROR = 3
-	FILE_WRITE_ERROR = 4
+	FILE_WRIT_ERROR = 4
 
-if len(sys.argv) > 3:
-	print('''\n\nError! Too many arguments.
+if len(sys.argv) != 3:
+	print('''\n\nError! Invalid # of arguments.
 Usage: python diskryptEncrypt.py filename.dskp decryption_key\n\n''')
-	sys.exit(ERROR.ARGV_EXCEED)
+	sys.exit(ERROR.ARGV_NEQUAL)
 
 #Assigning variables from the argument vector.
 userFile = sys.argv[1]

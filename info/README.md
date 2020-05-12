@@ -70,16 +70,27 @@ There are a slew of error codes that the program returns. At the moment only fou
 are implemented. They are as follows:
 
 ```python
-	ARGV_EXCEED = 1				#You passed in too many arguments.
+	ARGV_NEQUAL = 1				#You passed in an incorrect number of arguments.
 	FILE_INVALID = 2			#The file extension is invalid. .txt and .dskp only!
 	FILE_READ_ERROR = 3			#There was an error reading the file contents.
-	FILE_WRITE_ERROR = 4			#There was an error writing to the file.
+	FILE_WRIT_ERROR = 4			#There was an error writing to the file.
 ```
 
 The program is set up such that when conditions are met, `sys.exit(ERROR_CODE)`
 is thrown and there is another more descriptive error message given by Diskrypt.
+
 As the program is iterated on, I will add more information here as well as any 
 troubleshooting steps you can take to fix common errors. 
+
+----
+
+### Troubleshooting
+
+**Issue: Diskrypt says it can't find my file.** 
+
+Solution: Make sure the file that you want to encrypt is in the same directory
+as `Diskrypt.py`. That means that it isn't in any subfolders or anything; you
+should see `myPasswords.dskp` and `Diskrypt.py` in the same place. 
 
 ----
 
