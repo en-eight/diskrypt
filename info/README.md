@@ -49,7 +49,7 @@ Then just run:
 
 `python Diskrypt.py filename.dskp myDecryptKey`
 
-...**making sure that the password file is in the same directory as the Diskrypt.py file.**
+...**making sure that the password file is in the same directory as the `Diskrypt.py` file.**
 
 When used properly, you're good to go. Run it again with the same parameters and
 it'll decrypt your file and you can actually read your passwords again! If you
