@@ -3,6 +3,7 @@ from enum import Enum
 from itertools import cycle
 import sys
 import base64
+import os
 
 def encryptStr(userString, userKey):
 	return "".join(chr(ord(x) ^ ord(y)) for x,y in zip(userString,userKey))
@@ -13,6 +14,7 @@ class ERROR(Enum):
 	FILE_INVALID = 2
 	FILE_READ_ERROR = 3
 	FILE_WRIT_ERROR = 4
+	FILE_DNE = 5
 
 if len(sys.argv) != 3:
 	print('''\n\nError! Invalid # of arguments.
@@ -23,7 +25,7 @@ Usage: python diskryptEncrypt.py filename.dskp decryption_key\n\n''')
 userFile = sys.argv[1]
 userKey = sys.argv[2]
 
-if ".dskp" in userFile or ".txt" in userFile:
+if ".dskp" in userFile or ".txt" in userFile and os.path.isfile(userFile) == True:
 	with open(userFile, 'r+', encoding="utf-16") as f:
 		data = f.read()
 		f.seek(0)
