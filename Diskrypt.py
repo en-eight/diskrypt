@@ -1,10 +1,9 @@
-import hashlib
 from enum import Enum
-from itertools import cycle
 import sys
-import base64
-import os
 
+
+#I do not like this algorithm 
+#Maybe change to a Caesar Cipher and then another algo
 def encryptStr(userString, userKey):
 	return "".join(chr(ord(x) ^ ord(y)) for x,y in zip(userString,userKey))
 
